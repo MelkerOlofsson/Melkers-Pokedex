@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="detaljer.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap");
+    </style>
+    <title>Melkers Pokédex | Details</title>
+  </head>
+  <body>
+    <!-- Header and navbar -->
+
+    <header>
+      <nav>
+        <div class="header-home">
+          <h1 class="home" id="logo">
+            <a href="index.html">Melkers Pokédex</a>
+          </h1>
+          <img
+            class="hamburgermenu"
+            id="hamburgericon"
+            src="assets/icons/icons8-hamburger.svg"
+            alt="Meny"
+          />
+          <img
+            class="hamburgermenu"
+            id="crossicon"
+            src="assets/icons/icons8-close.svg"
+            alt="Stäng menyn"
+          />
+        </div>
+        <ul class="navbar-list">
+          <li><a href="chart.html">Chart.js</a></li>
+          <li><a href="cities.html">Cities</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Pokémon Hero Section -->
+
+      <section class="pokedex-container">
+        <section class="pokemon-hero-section">
+          <div class="pokemon-hero-container"></div>
+        </section>
+        <!-- Pokémon Information Section -->
+
+        <section class="pokemon-information-section">
+          <div class="pokemon-information-container">
+            <div class="main-information-container">
+              <div class="main-information">
+                <h2>Vikt:</h2>
+                <h3 id="weight" class="data-container">Placeholder</h3>
+              </div>
+              <div class="main-information">
+                <div id="types" class="data-container">Placeholder</div>
+              </div>
+              <div class="main-information">
+                <h2>Höjd:</h2>
+                <h3 id="height" class="data-container">Placeholder</h3>
+              </div>
+            </div>
+            <h2 class="pokemon-bio">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto quibusdam nobis voluptate suscipit perferendis
+              assumenda iste sed autem laudantium commodi magni, tempore, et
+              quisquam porro rem exercitationem molestias cupiditate minus?
+            </h2>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+
+    <footer>
+      <p>
+        Denna webbplats är ett projekt skapat av Melker Olofsson på IT-Högskolan
+        i Göteborg för kursen "Native JavaScript".
+      </p>
+    </footer>
+    <script src="shared.js"></script>
+    <script src="detaljer.js"></script>
+  </body>
+</html>

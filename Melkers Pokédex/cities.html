@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melkers Pokéchart | Cities</title>
+    <link rel="stylesheet" href="cities.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Header and navbar -->
+
+    <header>
+      <nav>
+        <div class="header-home">
+          <h1 class="home" id="logo">
+            <a href="index.html">Melkers Citýdex</a>
+          </h1>
+          <img
+            class="hamburgermenu"
+            id="hamburgericon"
+            src="assets/icons/icons8-hamburger.svg"
+            alt="Meny"
+          />
+          <img
+            class="hamburgermenu"
+            id="crossicon"
+            src="assets/icons/icons8-close.svg"
+            alt="Stäng menyn"
+          />
+        </div>
+        <ul class="navbar-list">
+          <li><a href="chart.html">Chart.js</a></li>
+          <li><a href="cities.html">Cities</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="cities-section">
+        <!-- Cities display and fetch Section -->
+
+        <div class="fetch-button-container">
+          <input
+            type="button"
+            value="Fetch"
+            name="fetchbutton"
+            id="fetchbutton"
+          />
+        </div>
+        <ul class="cities-list">
+          <li class="no-cities">
+            <h2>
+              Klicka på knappen "<u>Fetch</u>" för att visa samtliga städer
+              ifrån Cities-API.
+            </h2>
+          </li>
+        </ul>
+        <!-- Create City Section -->
+
+        <section class="create-city-section">
+          <h2>
+            Skapa en ny stad och skicka in till Cities-API med "Post"-metoden.
+          </h2>
+          <form class="create-city-container">
+            <div class="create-text-inputs">
+              <label
+                >Fyll i stadsnamn:
+                <input
+                  type="text"
+                  placeholder="Stadsnamn"
+                  name="create-city-name"
+                  id="create-city-name"
+                />
+              </label>
+              <label
+                >Fyll i population:
+                <input
+                  type="text"
+                  placeholder="Antal befolkning"
+                  name="create-city-population"
+                  id="create-city-population"
+                />
+              </label>
+            </div>
+            <div class="create-button-inputs">
+              <input type="button" id="create-sendbutton" value="Skicka" />
+              <input type="button" id="create-regretbutton" value="Ångra" />
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+
+    <footer>
+      <p>
+        Denna webbplats är ett projekt skapat av Melker Olofsson på IT-Högskolan
+        i Göteborg för kursen "Native JavaScript".
+      </p>
+    </footer>
+    <script src="shared.js"></script>
+    <script src="cities.js"></script>
+  </body>
+</html>
