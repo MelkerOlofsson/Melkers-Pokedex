@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header and navbar */
+
+header {
+  background: linear-gradient(90deg, #a32a21, #ef4034, #a32a21);
+  border-bottom: #090C02 .15rem solid;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: 1rem;
+}
+
+.hamburgermenu {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+#hamburgericon {
+  display: inline;
+}
+
+#crossicon {
+  display: none;
+}
+
+.navbar-list {
+  list-style: none;
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.navbar-list li {
+  padding: .5rem;
+  font-size: 13pt;
+}
+
+.home a, .navbar-list li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.home a:hover, .navbar-list li a:hover {
+  color: beige;
+}
+
+/* Pokédex */
+
+main {
+  min-height: 90vh;
+}
+
+/* Pokémon Hero Section */
+
+.pokemon-hero-section {
+  border-bottom: #090C02 solid .15rem;
+}
+
+.pokemon-hero-information-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pokemon-hero-information {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0 2rem;
+  background-color: #E5E7E6;
+  color: #2D3142;
+  border: #2D3142 solid .2rem;
+  border-radius: 3rem;
+}
+
+.pokemon-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Pokémon Information Section */
+
+.pokemon-information-section {
+  background: linear-gradient(#a09f9d, #585858);
+  min-height: 50vh;
+}
+
+.pokemon-information-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+.main-information-container, .pokemon-bio {
+  margin-top: 1rem;
+}
+
+.main-information-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-information, .data-container, .pokemon-type, .pokemon-bio {
+  border: solid #090C02 .15rem;
+  color: #090C02;
+  border-radius: 2rem;
+}
+
+.main-information, .data-container {
+  padding: .3rem;
+}
+
+.main-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #E5E7E6;
+  min-width: 5rem;
+  min-height: 5rem;
+}
+
+.main-information > h2 {
+  font-size: 13pt;
+}
+
+.data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: .3rem;
+  background-color: #fff;
+  font-size: 10pt;
+}
+
+#types {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: #E5E7E6;
+}
+
+.pokemon-type {
+  padding: 0 .75rem;
+  background-color: #fff;
+  color: #fff;
+  margin: .1rem
+}
+
+/* Pokémon type color credit: https://gist.github.com/apaleslimghost/0d25ec801ca4fc43317bcff298af43c3 */
+
+#normal-type {
+  background-color: #A8A77A;
+  color: #090C02;
+}
+
+#fire-type {
+  background-color: #EE8130;
+}
+
+#water-type {
+  background-color: #6390F0;
+}
+
+#electric-type {
+  background-color: #F7D02C;
+  color: #090C02;
+}
+
+#grass-type {
+  background-color: #7AC74C;
+  color: #090C02;
+}
+
+#ice-type {
+  background-color: #96D9D6;
+  color: #090C02;
+}
+
+#fighting-type {
+  background-color: #C22E28;
+}
+
+#poison-type {
+  background-color: #A33EA1;
+}
+
+#ground-type {
+  background-color: #E2BF65;
+  color: #090C02;
+}
+
+#flying-type {
+  background-color: #A98FF3;
+}
+
+#psychic-type {
+  background-color: #F95587;
+}
+
+#bug-type {
+  background-color: #A6B91A;
+  color: #090C02;
+}
+
+#rock-type {
+  background-color: #B6A136;
+}
+
+#ghost-type {
+  background-color: #735797;
+}
+
+#dragon-type {
+  background-color: #6F35FC;
+}
+
+#dark-type {
+  background-color: #705746;
+}
+
+#steel-type {
+  background-color: #B7B7CE;
+  color: #090C02;
+}
+
+#fairy-type {
+  background-color: #D685AD;
+}
+
+/* End of Pokémon type colors */
+
+.pokemon-bio {
+  font-size: 14pt;
+  padding: .75rem .75rem;
+  background-color: #E5E7E6;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(90deg, #a32a21, #ef4034, #a32a21);
+  border-top: #090C02 .15rem solid;
+}
+
+footer > p {
+  font-size: 11pt;
+  padding: 1rem;
+  color: #fff;
+}
+
+/* Överbliven kod nedanför som jag kanske slutför i framtiden för att göra webbplatsen responsiv */
+
+@media (min-width: 980px) {
+  nav {
+  height: 5vh;
+  justify-content: space-between;
+  padding: 0 2rem;
+  }
+
+  .navbar-list {
+    display: flex;
+  }
+}

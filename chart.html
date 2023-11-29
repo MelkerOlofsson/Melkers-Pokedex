@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="chart.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600&display=swap");
+    </style>
+    <title>Melkers Pokéchart | Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <!-- Header and navbar -->
+
+    <header>
+      <nav>
+        <div class="header-home">
+          <h1 class="home" id="logo">
+            <a href="index.html">Melkers Pokéchart</a>
+          </h1>
+          <img
+            class="hamburgermenu"
+            id="hamburgericon"
+            src="assets/icons/icons8-hamburger.svg"
+            alt="Meny"
+          />
+          <img
+            class="hamburgermenu"
+            id="crossicon"
+            src="assets/icons/icons8-close.svg"
+            alt="Stäng menyn"
+          />
+        </div>
+        <ul class="navbar-list">
+          <li><a href="chart.html">Chart.js</a></li>
+          <li><a href="cities.html">Cities</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Chart section -->
+
+      <section class="chart-section">
+        <section class="chart-description-section">
+          <h2>
+            Denna chart visar vilka Pokémontyper som existerar och hur många
+            Pokémon som har just den typen.
+          </h2>
+        </section>
+        <section class="canvas-section">
+          <section id="load-roller">
+            <!-- Open source loader from https://loading.io/css/ -->
+
+            <div class="lds-roller">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </section>
+          <!-- Open source chart and canvas from https://www.chartjs.org/ -->
+
+          <canvas id="myChart"></canvas>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+
+    <footer>
+      <p>
+        Denna webbplats är ett projekt skapat av Melker Olofsson på IT-Högskolan
+        i Göteborg för kursen "Native JavaScript".
+      </p>
+    </footer>
+    <script src="shared.js"></script>
+    <script src="chart.js"></script>
+  </body>
+</html>
