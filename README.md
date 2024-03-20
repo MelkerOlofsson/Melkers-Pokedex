@@ -1,5 +1,8 @@
 # Melkers-Pokedex
 
+*Link:*
+*https://melkerolofsson.github.io/Melkers-Pokedex/*
+
 *THIS PROJECT IS NOT MADE FOR DESKTOP AS IT WASN'T A CRITERIA, AND THEREFORE IT'S NOT RESPONSIVE. IT'S MADE FOR CELLPHONES ONLY*
 
 This project was made on my first year at IT-Högskolan in Gothenburg, Sweden. It was created as a project for my course in Native JavaScript.
